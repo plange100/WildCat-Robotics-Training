@@ -53,10 +53,11 @@ git config --global pull.rebase false
 
 # 5. (Windows only) Ensure consistent line endings across platforms
 git config --global core.autocrlf true
+```
 
 ---
 
-## 3. Essential VS Code Extensions for FRC & Java
+### 3. Essential VS Code Extensions for FRC & Java
 
 The WPILib installer pre-packages the base Java language server and WPILib tools. Adding these specific Java and productivity extensions gives students a full-featured IDE experience with auto-completion, unit testing, and code generation.
 

@@ -57,3 +57,21 @@ Highlight critical warnings or safety tips using official GitHub blockquote aler
 
 > [!CAUTION]
 > Hardware or benchtop safety hazards (e.g., powered motors or unpropped robots).
+>
+> ### C. GitHub Callout Alerts
+Highlight critical warnings or safety tips using official GitHub blockquote alerts.
+
+#### How to write them in Markdown:
+```text
+> [!NOTE]
+> Helpful context, tips, or non-blocking suggestions.
+
+> [!IMPORTANT]
+> Key configuration details or required prerequisites.
+
+> [!WARNING]
+> Steps where common errors occur (e.g., mismatched emails or CAN IDs).
+
+> [!CAUTION]
+> Hardware or benchtop safety hazards (e.g., powered motors or unpropped robots)
+```

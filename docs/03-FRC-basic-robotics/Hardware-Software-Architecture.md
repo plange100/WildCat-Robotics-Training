@@ -22,6 +22,8 @@ Each corner module utilizes two motors and an integrated encoder:
 * **Steering (Azimuth) Motor:** REV NEO 550 motor managed by an external REV SPARK MAX controller. Rotates the module 360 degrees.
 * **Absolute Encoder:** REV Through Bore Encoder plugged directly into the SPARK MAX data port to track absolute wheel angle across power cycles.
 
+![MAXSwerve Corner Module](../images/MAXSwerve-corner-module.png)
+
 ### C. Superstructure & Mechanisms
 * **Intake / Roller Wheels:** Driven by standard REV NEO brushless motors (REV-21-1650) and controlled by standalone SPARK MAX units.
 

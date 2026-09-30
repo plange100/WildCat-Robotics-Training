@@ -52,3 +52,36 @@ git pull
 ```
 
 ---
+
+## 4. Staging & Committing (Saving Your Work Locally)
+
+A **commit** is like a permanent save point in a video game.
+
+### Step 1: Review What Changed
+In the **Source Control** sidebar (`Ctrl + Shift + G`), look under **Changes**. Clicking any file will open a side-by-side diff showing exactly what lines you added (green) or deleted (red).
+
+### Step 2: Stage Your Changes
+* **In VS Code:** Hover over the file name and click the `+` icon next to it (or click the `+` next to the word **Changes** to stage all files at once). The files move up to **Staged Changes**.
+* **In Terminal:**
+  ```bash
+  # Stage a specific file
+  git add src/main/java/frc/robot/subsystems/DriveSubsystem.java
+
+  # Or stage all modified files at once
+  git add .
+
+### Step 3: Write a Meaningful Commit Message
+In the text box above the staged files, write a short summary of what you did.
+
+> [!NOTE]
+> Good commit messages make troubleshooting easy. Use present tense and describe the change:
+> * ✅ `Add soft limits to elevator motor`
+> * ✅ `Invert left drive motors and update deadband`
+> * ❌ `fixed stuff`
+> * ❌ `code`
+
+### Step 4: Commit
+* **In VS Code:** Click the blue checkmark button labeled **Commit** (or press `Ctrl + Enter`).
+* **In Terminal:**
+  ```bash
+  git commit -m "Add soft limits to elevator motor"

@@ -1,4 +1,6 @@
-# 📝 Markdown Style & Formatting Standards
+# README.md 
+
+## 📝 Markdown Style & Formatting Standards
 
 ## Step 1. Conventions
 
@@ -78,3 +80,6 @@ Highlight critical warnings or safety tips using official GitHub blockquote aler
 > [!CAUTION]
 > Hardware or benchtop safety hazards (e.g., powered motors or unpropped robots)
 ```
+
+## Flowcharts
+Flowcharts made using mermaid.ai

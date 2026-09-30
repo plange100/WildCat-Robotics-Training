@@ -23,7 +23,7 @@ Follow this guide in order to configure a laptop for FRC robot programming with 
 
 ---
 
-### Step 2. Install & Configure Git
+## Step 2. Install & Configure Git
 
 If Git was not bundled or you need command-line tools:
 

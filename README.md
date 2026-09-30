@@ -34,6 +34,8 @@ To keep our repository documentation clean, readable, and uniform across all pag
     * Indented sub-detail
     * Another sub-detail
 
+---
+
 ## Step 3. Continuation
 
 ### A. Tables

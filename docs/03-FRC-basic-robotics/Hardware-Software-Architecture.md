@@ -14,7 +14,7 @@ Our robot utilizes an all-REV electronics ecosystem paired with an NI roboRIO an
 * **Radio / Network Switch:** Communicates over Ethernet to the driver station.
 * **REV Power Distribution Hub (PDH):** Manages power delivery with high-amp breakers and digital current sensing. Terminate CAN bus here.
 
-![Core Control & Navigation Architecture](docs/images/core-control.png)
+![Core Control & Navigation Architecture](../images/core-control.png)
 
 ### B. Drivetrain: REV MAXSwerve Modules (x4)
 Each corner module utilizes two motors and an integrated encoder:

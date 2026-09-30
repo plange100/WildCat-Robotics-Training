@@ -1,1 +1,0 @@
-basic setup from a high view

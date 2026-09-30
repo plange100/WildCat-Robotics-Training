@@ -99,3 +99,80 @@ The WPILib installer pre-packages the base Java language server and WPILib tools
 1. Press `Ctrl + Shift + X` (or `Cmd + Shift + X` on Mac) to open the **Extensions** sidebar.
 2. Search for the extension name or copy-paste its ID (e.g., `vscjava.vscode-gradle`).
 3. Click **Install**.
+
+---
+
+## 4. Install FRC Vendor Libraries (Vendordeps)
+
+Modern FRC robots require third-party libraries for motor controllers, sensors, and gyros. These must be added to each robot project:
+
+### Common Vendor URLs:
+* **REVLib (Spark Max, Spark Flex, NEO, Vortex):**  
+  `https://software-metadata.revrobotics.com/REVLib-2027.json`
+* **CTRE Phoenix 6 (Pigeon 2.0, CANcoder, Kraken, Falcon 500):**  
+  `https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-frc2027-latest.json`
+* **Kauai Labs (navX):**  
+  `https://dev.studica.com/releases/2027/NavX.json`
+
+### How to Add a Vendor Library in VS Code:
+1. Open your robot project folder in VS Code.
+2. Press `Ctrl + Shift + P` (or click the red **`W`** WPILib logo in the top right).
+3. Type and select **`WPILib: Manage Vendor Libraries`**.
+4. Select **`Install new library (online)`**.
+5. Paste the vendor `.json` URL from above and press **Enter**.
+6. VS Code will download the dependencies into the `vendordeps/` folder and rebuild the Gradle project.
+
+---
+
+## 5. Setting Your FRC Team Number in VS Code
+
+Setting your team number allows VS Code to automatically locate and deploy code to the roboRIO over USB (`172.22.11.2`) or radio Wi-Fi (`10.TE.AM.2`):
+
+1. Press `Ctrl + Shift + P` to open the Command Palette.
+2. Type and select **`WPILib: Set Team Number`**.
+3. Enter your team number (e.g., `9086`) and press **Enter**.
+4. This saves to `.wpilib/wpilib_preferences.json`.
+
+---
+
+## 6. Recommended VS Code Settings for FRC
+
+Add these settings to VS Code to streamline Java robot programming. 
+
+Press `Ctrl + Shift + P` > type `Preferences: Open User Settings (JSON)` > paste the following inside the root `{}`:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/build": true,
+    "**/.gradle": true
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "git.autofetch": true,
+  "git.confirmSync": false
+}
+
+* `"editor.formatOnSave": true`: Auto-formats Java code every time a student saves.
+* `"files.exclude"`: Hides compiled `build/` and `.gradle/` folders from the file tree to keep the workspace clean.
+* `"git.autofetch": true`: Periodically checks GitHub in the background so students know if someone else has pushed new code.
+```
+
+---
+
+## 7. First Verification Test
+
+1. Open WPILib VS Code.
+2. Press `Ctrl + Shift + P` > select `WPILib: Create a new project`.
+3. Select `Template` > `Java` > `Command-Based Skeleton`.
+4. Pick a folder, enter your team number, and click `Generate Project`.
+5. Press `Ctrl + Shift + P` > select `WPILib: Build Robot Code` (or press `F5`).
+6. If the output terminal displays `BUILD SUCCESSFUL`, your development workstation is fully operational.

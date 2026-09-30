@@ -4,11 +4,13 @@ Follow this guide in order to configure a laptop for FRC robot programming with 
 
 ---
 
-## 1. Install WPILib & Tools (Includes Java & VS Code)
+## Step 1. Install WPILib & Tools (Includes Java & VS Code)
 
 > [!IMPORTANT]
 > **Do not install standalone Java or standalone VS Code first.**  
 > The official **WPILib Installer** bundles a dedicated, sandboxed OpenJDK (JDK 17) and an isolated instance of VS Code configured specifically to avoid breaking system paths or conflicting with other versions.
+
+### A. Install WPILib
 
 1. Download the latest release of the **WPILib Installer** from the official WPILib GitHub Releases page: https://github.com/wpilibsuite/allwpilib/releases
    * **Windows:** Download the `.iso` file. Right-click and choose **Mount**, then run `WPILibInstaller.exe`.
@@ -21,18 +23,18 @@ Follow this guide in order to configure a laptop for FRC robot programming with 
 
 ---
 
-## 2. Install & Configure Git
+### Step 2. Install & Configure Git
 
 If Git was not bundled or you need command-line tools:
 
-### Step 1: Install Git
+### A. Install Git
 * **Windows:** Download and install from https://git-scm.com/ . Leave all standard defaults checked (use standard OpenSSH, checkout Windows-style/commit Unix-style line endings).
 * **Ubuntu/Linux:**
   `sudo apt update && sudo apt install git -y`
 * **macOS:**
   `xcode-select --install`
 
-### Step 2: Global Configuration (Name & Email)
+### B. Global Configuration (Name & Email)
 Open your terminal (or press Ctrl + ` in VS Code) and set your Git identity.
 
 > [!WARNING]
@@ -57,7 +59,7 @@ git config --global core.autocrlf true
 
 ---
 
-### 3. Essential VS Code Extensions for FRC & Java
+## Step 3. Essential VS Code Extensions for FRC & Java
 
 The WPILib installer pre-packages the base Java language server and WPILib tools. Adding these specific Java and productivity extensions gives students a full-featured IDE experience with auto-completion, unit testing, and code generation.
 
@@ -102,7 +104,7 @@ The WPILib installer pre-packages the base Java language server and WPILib tools
 
 ---
 
-## 4. Install FRC Vendor Libraries (Vendordeps)
+## Step 4. Install FRC Vendor Libraries (Vendordeps)
 
 Modern FRC robots require third-party libraries for motor controllers, sensors, and gyros. These must be added to each robot project:
 
@@ -124,7 +126,7 @@ Modern FRC robots require third-party libraries for motor controllers, sensors, 
 
 ---
 
-## 5. Setting Your FRC Team Number in VS Code
+## Step 5. Setting Your FRC Team Number in VS Code
 
 Setting your team number allows VS Code to automatically locate and deploy code to the roboRIO over USB (`172.22.11.2`) or radio Wi-Fi (`10.TE.AM.2`):
 
@@ -135,7 +137,7 @@ Setting your team number allows VS Code to automatically locate and deploy code 
 
 ---
 
-## 6. Recommended VS Code Settings for FRC
+## Step 6. Recommended VS Code Settings for FRC
 
 Add these settings to VS Code to streamline Java robot programming. 
 
@@ -168,7 +170,7 @@ Press `Ctrl + Shift + P` > type `Preferences: Open User Settings (JSON)` > paste
 
 ---
 
-## 7. First Verification Test
+## Step 7. First Verification Test
 
 1. Open WPILib VS Code.
 2. Press `Ctrl + Shift + P` > select `WPILib: Create a new project`.

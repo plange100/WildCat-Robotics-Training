@@ -26,6 +26,7 @@ Each corner module utilizes two motors and an integrated encoder:
 <p align = "center">
    <img src="../images/MAXSwerve-corner-module.png" alt="Corner Control Architecture" width="400">
 </p>
+
 ### C. Superstructure & Mechanisms
 * **Intake / Roller Wheels:** Driven by standard REV NEO brushless motors (REV-21-1650) and controlled by standalone SPARK MAX units.
 

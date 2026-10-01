@@ -148,3 +148,6 @@ driverController.y().onTrue(new InstantCommand(() -> m_robotDrive.zeroHeading())
 ```
 
 This does **not** physically rotate the wheels. It simply instructs the gyro software to set the current heading as $0^\circ$ (field forward).
+
+
+![Advanced Swerve Flowchart](../images/advanced-swerve-drive.png)
